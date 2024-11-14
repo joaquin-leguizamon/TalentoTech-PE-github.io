@@ -1,0 +1,578 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #b4dd13;
+    text-decoration: none;
+}
+
+/* Título principal */
+.titulo-principal a {
+    text-decoration: none;
+}
+
+.titulo-principal p {
+    margin-left: 0;
+    font-size: 5em;
+    font-family: "Micro 5", monospace;
+    color: #b4dd13;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Carrito de compras */
+.carrito-de-compras {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#carrito_icono {
+    color: #000000;
+    font-size: 1.5em;
+    padding: 0.5em;
+    background-color: #b4dd13;
+    border-radius: 0.3em;
+    transition: color 0.3s ease
+}
+
+#carrito_icono:hover {
+    background-color: magenta;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+
+nav {
+    font-family: "Inconsolata", monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1em;
+    height: 3em;
+    background-color: #b4dd13;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin-bottom: 2px;
+    padding: 10px;
+    font-size: larger;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease
+}
+
+nav a:hover {
+    color: magenta;
+    transform: scale(1.1);
+}
+
+
+
+
+main {
+    background-color: #000000;
+} 
+
+.propaganda-inicio{
+    display:flex;
+    justify-content: center;
+    padding: 2em 2em;
+}
+
+.propaganda-inicio p{
+    font-family: "Inconsolata", monospace;
+    color: #b4dd13;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+
+.boton-centro {
+    text-align: center;
+}
+
+.boton-productos {
+    font-family: "Inconsolata", monospace;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    color: #000000;
+    background-color: #b4dd13; 
+    text-decoration: none; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+.boton-productos:hover {
+    background-color: magenta; 
+}
+
+.titulos-populares{
+    font-family: "Inconsolata", monospace;
+    font-size: 1.5em;
+    background-color: #000000;
+    color: #b4dd13;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 2em ;
+}
+
+
+
+
+.slide {
+    width: 200%; 
+    max-width: 1000px; 
+    height: auto;
+    margin: auto;
+    overflow: hidden; 
+}
+
+
+.slide img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+
+/* Reseñas */
+.seccion-reseñas {
+    font-family: "Inconsolata", monospace;
+    background-color: #000000;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-reseñas h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #b4dd13;
+    
+}
+
+.contenedor-reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    justify-items: center; 
+}
+
+.reseña {
+    font-family: "Inconsolata", monospace;
+    background-color: #b4dd13;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.reseña p {
+    margin: 0;
+    font-size: 1em;
+    color: #000000;
+}
+
+.reseña .autor {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000000;
+}
+
+
+/*footer*/
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background: #b4dd13;
+    color: #000000;
+    flex-wrap: wrap;
+}
+
+.nombre-footer {
+    font-family: "Micro 5", serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.copyright {
+    font-family: "Inconsolata", monospace;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.nombre-footer-menu {
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;
+    margin-bottom: 1em;   
+}
+
+.menu-footer {
+    margin-top: 1.5em;
+}
+
+.menu-footer ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.menu-footer li {
+    list-style-type: none;
+}
+
+.menu-footer a {
+    font-family: "Inconsolata", monospace;
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.menu-footer a:hover {
+    color: magenta;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.invitacion-redes {
+    font-family: "Inconsolata", monospace;
+    color: #000000;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.redes-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-icons i {
+    color: #000000;
+    font-size: 1.5em;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.redes-icons i:hover {
+    color: magenta;
+    transform: scale(1.1);
+}
+
+
+/* Prodcutos */
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+.producto-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(25% - 20px); 
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-family: "Inconsolata", monospace;
+}
+
+
+.producto-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: contain; 
+    border-radius: 10px;
+    background-color: #fff 
+}
+
+.producto-card h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.producto-card p {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.producto-card .precio {
+    font-size: 1.3em;
+    color: #000;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.producto-card .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #b4dd13;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.producto-card .btn:hover {
+    background-color: magenta;
+}
+
+
+
+  /* Contacto */
+.contacto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #b4dd13;
+}
+
+.contacto p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #b4dd13;
+}
+
+.contacto-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form label {
+    font-size: 1em;
+    text-align: left;
+    color: #b4dd13;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contacto-form .submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #b4dd13;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form .submit-button:hover {
+    background-color: magenta;
+}
+
+
+@media (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .titulo-principal p {
+        font-size: 2.5em; /* Reducir tamaño del título */
+        margin-left: 0;
+    }
+
+    .carrito-de-compras {
+        margin-top: 10px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #carrito_icono {
+        font-size: 1.3em;
+        padding: 0.5em;
+    }
+
+    /* Body */
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+
+    /* Main */
+    main {
+        padding: 15px;
+    }
+
+    .propaganda-inicio {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .propaganda-inicio p {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+
+    .boton-productos {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+
+    .titulos-populares {
+        font-size: 1.2em;
+    }
+
+    .slide {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Sección de Reseñas */
+    .seccion-reseñas {
+        padding: 30px 10px;
+    }
+
+    .contenedor-reseñas {
+        grid-template-columns: 1fr; /* Mostrar las reseñas en una sola columna */
+    }
+
+    .reseña {
+        width: 90%; /* Asegura que las reseñas se adapten a la pantalla */
+        margin: 0 auto;
+    }
+
+    /* Productos */
+    .productos {
+        flex-direction: column; /* Pone los productos en columna */
+        padding: 10px;
+    }
+
+    .producto-card {
+        width: 100%; /* Las tarjetas de producto ocupan todo el ancho */
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .producto-card img {
+        height: 150px;
+    }
+
+    .producto-card h3 {
+        font-size: 1em;
+    }
+
+    /* Contacto */
+    .contacto {
+        padding: 20px 10px;
+    }
+
+    .contacto h2 {
+        font-size: 1.8em;
+    }
+
+    .contacto p {
+        font-size: 1em;
+    }
+
+    .contacto-form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contacto-form input,
+    .contacto-form textarea {
+        font-size: 0.9em;
+    }
+
+    .contacto-form .submit-button {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+
+    /* Footer */
+    .container-footer {
+        flex-direction: column; /* Organiza el footer en columna */
+        padding: 1em;
+        align-items: center;
+    }
+
+    .nombre-footer {
+        font-size: 2em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .menu-footer ul {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .redes-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .invitacion-redes {
+        font-size: 1.2em;
+    }
+}
