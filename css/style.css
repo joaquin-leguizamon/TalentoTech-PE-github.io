@@ -435,7 +435,7 @@ main {
     }
 
     .titulo-principal p {
-        font-size: 2.5em; /* Reducir tamaño del título */
+        font-size: 2.5em;
         margin-left: 0;
     }
 
@@ -454,7 +454,7 @@ main {
     body {
         margin: 0;
         padding: 0;
-        font-size: 16px; /* Reducir el tamaño de la fuente */
+        font-size: 16px; 
     }
 
     /* Main */
@@ -492,22 +492,22 @@ main {
     }
 
     .contenedor-reseñas {
-        grid-template-columns: 1fr; /* Mostrar las reseñas en una sola columna */
+        grid-template-columns: 1fr; 
     }
 
     .reseña {
-        width: 90%; /* Asegura que las reseñas se adapten a la pantalla */
+        width: 90%; 
         margin: 0 auto;
     }
 
     /* Productos */
     .productos {
-        flex-direction: column; /* Pone los productos en columna */
+        flex-direction: column; 
         padding: 10px;
     }
 
     .producto-card {
-        width: 100%; /* Las tarjetas de producto ocupan todo el ancho */
+        width: 100%; 
         max-width: 100%;
         margin: 10px 0;
     }
@@ -550,7 +550,7 @@ main {
 
     /* Footer */
     .container-footer {
-        flex-direction: column; /* Organiza el footer en columna */
+        flex-direction: column; 
         padding: 1em;
         align-items: center;
     }
