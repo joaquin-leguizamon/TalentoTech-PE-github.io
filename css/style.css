@@ -57,44 +57,6 @@ header {
     transform: scale(1.1);
 }
 
-
-
-nav {
-    font-family: "Inconsolata", monospace;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 1em;
-    height: 3em;
-    background-color: #b4dd13;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav a {
-    margin-bottom: 2px;
-    padding: 10px;
-    font-size: larger;
-    color: #000000;
-    text-decoration: none;
-    text-align: center;
-    transition: color 0.3s ease
-}
-
-nav a:hover {
-    color: magenta;
-    transform: scale(1.1);
-}
-
-
-
-
 main {
     background-color: #000000;
 } 
@@ -160,6 +122,39 @@ main {
     object-fit: cover; 
 }
 
+/* navbar */
+nav {
+    font-family: "Inconsolata", monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1em;
+    height: 3em;
+    background-color: #b4dd13;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    margin-bottom: 2px;
+    padding: 10px;
+    font-size: larger;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease
+}
+
+nav a:hover {
+    color: magenta;
+    transform: scale(1.1);
+}
 
 
 /* Reseñas */
