@@ -122,7 +122,6 @@ main {
     object-fit: cover; 
 }
 
-/* navbar */
 nav {
     font-family: "Inconsolata", monospace;
     display: flex;
@@ -307,6 +306,9 @@ nav a:hover {
 }
 
 .producto-card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -326,16 +328,10 @@ nav a:hover {
     border-radius: 10px;
 }
 
-
 .producto-card h3 {
     font-size: 0.9em; 
     margin-top: 10px;
-}
-
-.producto-card p {
-    font-size: 0.8em; 
-    color: #666;
-    margin-top: 5px;
+    flex-grow: 0; 
 }
 
 .producto-card .precio {
@@ -343,6 +339,7 @@ nav a:hover {
     color: #000;
     margin-top: 10px;
     font-weight: bold;
+    flex-grow: 0; 
 }
 
 .producto-card .btn {
@@ -361,6 +358,20 @@ nav a:hover {
     background-color: magenta;
 }
 
+.producto-card .view-description {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px; 
+    background-color: #f0f0f0; 
+    color: #000; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+.producto-card .view-description:hover {
+    background-color: #d1d1d1; 
 
   /* Contacto */
 .contacto {
@@ -565,4 +576,5 @@ nav a:hover {
         font-size: 1.2em;
     }
 }
-} 
+}
+}
