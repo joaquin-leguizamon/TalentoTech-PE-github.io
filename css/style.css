@@ -155,6 +155,62 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+/* Contacto */
+.contacto {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contacto h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #b4dd13;
+}
+
+.contacto p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #b4dd13;
+}
+
+.contacto-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contacto-form label {
+    font-size: 1em;
+    text-align: left;
+    color: #b4dd13;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contacto-form .submit-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #b4dd13;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form .submit-button:hover {
+    background-color: magenta;
+}
+
 
 /* Reseñas */
 .seccion-reseñas {
@@ -293,6 +349,132 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+/* Carrito de compras */
+
+body {
+    background-color: black; 
+    color: white; 
+    margin: 0; 
+    font-family: "Inconsolata", monospace; 
+}
+
+#cart {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .product-cart img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: min-content;
+    height: 15vh;
+    background-color: transparent;
+  }
+  .total-box {
+    font-family:  "Inconsolata", monospace;
+    display: flex;
+    place-self: end;
+    padding: 8px;
+    color: magenta;
+    border-radius: 8px;
+  }
+  
+  .cart-summary {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .badge{
+    background-color: white;
+    color: magenta;
+    font-size:medium;
+  }
+  
+  
+  .checkout-button {
+    border-radius: 25px;
+    padding: 8px 50px;
+    background-color: #b4dd1e;
+    border-color: #b4dd1e;
+    color: black;
+  }
+  .checkout-button:hover {
+    background-color: magenta;
+    border-color: magenta;
+  }
+  .keep-shopping-button {
+    border: 1.5px solid #b4dd13;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 25px;
+    padding: 8px 50px;
+  }
+  .keep-shopping-button:hover {
+    background-color: #b4dd13;
+    color: black;
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .table .form-control {
+    width: 60px;
+    margin: 0 auto;
+  }
+  .product-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  .product-cart h2 {
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  #cart h2 {
+    color: black;
+    font-family: "Inconsolata", monospace;
+  }
+  
+  .description {
+    font-size: medium;
+    font-family: "Inconsolata", monospace;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .remove-button {
+    background-color: #b4dd13; 
+    color: #000000; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px;
+
+}
+
+.remove-button:hover {
+    background-color: magenta; 
+    color: #000000
+}
 
 /* Productos */
 .productos {
@@ -372,61 +554,6 @@ nav a:hover {
 
 .producto-card .view-description:hover {
     background-color: #d1d1d1; 
-
-  /* Contacto */
-.contacto {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.contacto h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #b4dd13;
-}
-
-.contacto p {
-    font-size: 1em;
-    margin-bottom: 20px;
-    color: #b4dd13;
-}
-
-.contacto-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contacto-form label {
-    font-size: 1em;
-    text-align: left;
-    color: #b4dd13;
-}
-
-.contacto-form input,
-.contacto-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contacto-form .submit-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #000000;
-    background-color: #b4dd13;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contacto-form .submit-button:hover {
-    background-color: magenta;
 }
 
 
@@ -576,5 +703,65 @@ nav a:hover {
         font-size: 1.2em;
     }
 }
+
+.product-cart img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    background-color: transparent;
+}
+.product-cart h2 {
+    font-size: 12px;
+    padding: 8px 20px;
+}
+#cart {
+    width: 100%;
+    padding: 20px 8px;
+}
+.description {
+    width: 100%;
+    font-size: small;
+}
+.cart-summary {
+    width: 75%;
+}
+
+.contact-container {
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.map-title,
+.map-container {
+    display: none;
 }
 }
+
+@media (max-width: 540px) {
+    #cart {
+      width: 100%;
+      padding: 10px 5px;
+    }
+    .cart-summary {
+      width: 80%;
+    }
+    .table .form-control {
+      width: 40px;
+      margin: 0 auto;
+    }
+    .table {
+      font-size: x-small;
+      margin: auto;
+    }
+    .description {
+      display: none;
+    }
+  
+    nav {
+      font-size: medium;
+    }
+  }
+  @media (max-width: 370px) {
+    .cart-summary {
+      width: 100%;
+    }
+  }
